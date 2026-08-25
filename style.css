@@ -1,1 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: beige;
+    color: rgb(1, 87, 1);
+}
+
+.cabecalho{
+    background-color: rgb(240, 240, 183);
+    color: darkgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+.cabecalho-imagem{
+    width: 150px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cabecalho-subtitulo{
+    font-size: 14px;
+    color: darkgreen;
+}
+
+.cabecalho-titulo{
+    color:#414c2f;
+}
+
+.cabecalho-lista{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.cabecalho-lista-item{
+    display: block;
+}
+
+.cabecalho a{
+    color: #000000;
+    font-family: Calibri, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
