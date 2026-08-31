@@ -121,11 +121,6 @@ main{
     max-width: 700px;
 }
 
-
-/* =========================
-   TEMA ESCURO
-   ========================= */
-
 body.tema-escuro{
     background-color: #121812;
     color: #e5e5e5;
