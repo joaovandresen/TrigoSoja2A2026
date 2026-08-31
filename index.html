@@ -3,31 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> AgroVandresen </title>
+
+    <title>AgroVandresen</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body id="inicio">
+
     <header class="cabecalho">
+
         <div class="cabecalho-marca">
-            <img src="img/soja.jpg" alt="Soja" class="cabecalho-imagem">
+
             <div>
-                <p class="cabecalho-subtitulo"> Trigo e Soja </p>
-                <h1 class="cabecalho-titulo"> AgroVandresen </h1>
+                <h1 class="cabecalho-titulo">AgroVandresen</h1>
             </div>
         </div>
+
         <nav>
             <ul class="cabecalho-lista">
-                
-                <li class="cabecalho-lista-item"> <a href="#soja"> Soja </a> </li>
-                <li class="cabecalho-lista-item"> <a href="#trigo"> Trigo </a> </li>
-                <li class="cabecalho-lista-item"> <a href="#contato"> Contato </a> </li>
+                <li class="cabecalho-lista-item">
+                    <a href="#soja">Soja</a>
+                </li>
+
+                <li class="cabecalho-lista-item">
+                    <a href="#trigo">Trigo</a>
+                </li>
+
+                <li class="cabecalho-lista-item">
+                    <a href="#contato">Contato</a>
+                </li>
             </ul>
         </nav>
-        <button class="botao-tema" id="botao-tema" type="button"> 
-        🌾    
-        </button>
 
-
+        <button class="botao-tema" id="botao-tema" aria-label="Alternar tema">
+    🌙
+    </button>
     </header>
+
+
+    <main>
+
+        <section class="secao" id="soja">
+            <h2>Soja</h2>
+
+            <img src="img/soja1.jpg" alt="Plantação de soja">
+
+            <p>
+                A soja é uma leguminosa muito importante para a alimentação e para a agricultura. É utilizada na produção de óleo, farelo, leite e outros alimentos. Também é uma importante fonte de proteínas e possui grande relevância na produção de ração animal e na economia agrícola.
+            </p>
+        </section>
+
+
+        <section class="secao" id="trigo">
+            <h2>Trigo</h2>
+
+            <img src="img/trigo1.jpg" alt="Plantação de trigo">
+
+            <p>
+                O trigo é um dos cereais mais cultivados no mundo. É utilizado principalmente na produção de farinha, pães, massas, bolos e biscoitos. Além de ser fonte de carboidratos, também fornece proteínas, fibras, vitaminas e minerais.
+            </p>
+        </section>
+
+
+        <section class="secao" id="contato">
+            <h2>Nossos Contatos</h2>
+
+            <p>
+                Entre em contato com a AgroVandresen para saber mais.
+            </p>
+
+            <p>
+                📞 Telefone: (43) 9684-1237
+            </p>
+
+            <p>
+                📧 E-mail: agrovandresen@gmail.com
+            </p>
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>

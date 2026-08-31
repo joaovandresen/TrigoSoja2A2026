@@ -9,6 +9,7 @@ body{
     line-height: 1.6;
     background-color: beige;
     color: rgb(1, 87, 1);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .cabecalho{
@@ -20,6 +21,13 @@ body{
     gap: 20px;
     padding: 12px 20px;
     border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cabecalho-marca{
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .cabecalho-imagem{
@@ -35,7 +43,7 @@ body{
 }
 
 .cabecalho-titulo{
-    color:#414c2f;
+    color: #414c2f;
 }
 
 .cabecalho-lista{
@@ -56,10 +64,102 @@ body{
     font-size: 20px;
     text-decoration: none;
 
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 6px;
     padding: 6px 8px;
     border-radius: 4px;
+
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.cabecalho a:hover{
+    background-color: rgba(0, 100, 0, 0.1);
+}
+
+.botao-tema{
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+main{
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.secao{
+    background-color: rgb(240, 240, 183);
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.secao h2{
+    color: darkgreen;
+    margin-bottom: 15px;
+}
+
+.secao img{
+    width: 100%;
+    max-width: 500px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.secao p{
+    color: #414c2f;
+    margin: 10px auto;
+    max-width: 700px;
+}
+
+
+/* =========================
+   TEMA ESCURO
+   ========================= */
+
+body.tema-escuro{
+    background-color: #121812;
+    color: #e5e5e5;
+}
+
+body.tema-escuro .cabecalho{
+    background-color: #1e2a1e;
+    color: #90c990;
+}
+
+body.tema-escuro .cabecalho-titulo{
+    color: #a8d5a8;
+}
+
+body.tema-escuro .cabecalho-subtitulo{
+    color: #90c990;
+}
+
+body.tema-escuro .cabecalho a{
+    color: #e5e5e5;
+}
+
+body.tema-escuro .cabecalho a:hover{
+    background-color: #2d422d;
+}
+
+body.tema-escuro .secao{
+    background-color: #1e2a1e;
+}
+
+body.tema-escuro .secao h2{
+    color: #90c990;
+}
+
+body.tema-escuro .secao p{
+    color: #d0d8d0;
 }
