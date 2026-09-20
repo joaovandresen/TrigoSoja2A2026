@@ -3,23 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>AgroVandresen</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body id="inicio">
-
     <header class="cabecalho">
-
         <div class="cabecalho-marca">
-
-            <div>
-                <h1 class="cabecalho-titulo">AgroVandresen</h1>
-            </div>
+            <h1 class="cabecalho-titulo">AgroVandresen</h1>
         </div>
-
         <nav>
             <ul class="cabecalho-lista">
                 <li class="cabecalho-lista-item">
@@ -36,56 +28,71 @@
             </ul>
         </nav>
 
-        <button class="botao-tema" id="botao-tema" aria-label="Alternar tema">
-    🌙
-    </button>
+        <button class="botao-tema" id="botao-tema" aria-label="Alterar tema">🌙</button>
+
     </header>
-
-
     <main>
-
         <section class="secao" id="soja">
             <h2>Soja</h2>
-
             <img src="img/soja1.jpg" alt="Plantação de soja">
-
             <p>
-                A soja é uma leguminosa muito importante para a alimentação e para a agricultura. É utilizada na produção de óleo, farelo, leite e outros alimentos. Também é uma importante fonte de proteínas e possui grande relevância na produção de ração animal e na economia agrícola.
+                A soja é uma leguminosa muito importante para a alimentação
+                e para a agricultura. É utilizada na produção de óleo,
+                farelo, leite e outros alimentos. Também é uma importante
+                fonte de proteínas e possui grande relevância na produção
+                de ração animal e na economia agrícola.
             </p>
         </section>
-
 
         <section class="secao" id="trigo">
             <h2>Trigo</h2>
-
             <img src="img/trigo1.jpg" alt="Plantação de trigo">
-
             <p>
-                O trigo é um dos cereais mais cultivados no mundo. É utilizado principalmente na produção de farinha, pães, massas, bolos e biscoitos. Além de ser fonte de carboidratos, também fornece proteínas, fibras, vitaminas e minerais.
+                O trigo é um dos cereais mais cultivados no mundo.
+                É utilizado principalmente na produção de farinha,
+                pães, massas, bolos e biscoitos. Além de ser fonte
+                de carboidratos, também fornece proteínas, fibras,
+                vitaminas e minerais.
             </p>
         </section>
 
-
-        <section class="secao" id="contato">
-            <h2>Nossos Contatos</h2>
-
+        <section class="fale-conosco secao" id="contato">
+            <h2>Contato</h2>
             <p>
-                Entre em contato com a AgroVandresen para saber mais.
+                Preencha os campos abaixo para entrar em contato.
             </p>
+            <form id="formulario-contato" action="https://formsubmit.co/ajax/joao.vandresen.costa@escola.pr.gov.br" method="post">
+                <input type="hidden" name="_subject" value="Nova mensagem do site AgroVandresen">
 
-            <p>
-                📞 Telefone: (43) 9684-1237
-            </p>
+                <input type="hidden" name="_template" value="table">
+                <label for="nome">Nome:</label>
 
-            <p>
-                📧 E-mail: agrovandresen@gmail.com
-            </p>
+                <input type="text" id="nome" name="Nome" placeholder="Digite seu nome completo" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="Telefone" placeholder="(00) 0 0000-0000" maxlength="16" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="Email" placeholder="exemplo@email.com" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="Mensagem" rows="6" placeholder="Escreva sua mensagem aqui!" required></textarea>
+                <button type="submit">Enviar</button>
+            
+            </form>
+            <p id="resposta-formulario" class="aviso-formulario" aria-live="polite"></p>
         </section>
-
     </main>
 
-
+    <footer id="fim">
+        <div class="texto">
+            <p>
+                <strong>Desenvolvido por:</strong>
+                <em>João Vandresen</em>
+                <br>
+                WhatsApp: (43) 9684-1237 |
+                agrovandresen@gmail.com
+            </p>
+        </div>
+    </footer>
     <script src="script.js"></script>
-
 </body>
 </html>
